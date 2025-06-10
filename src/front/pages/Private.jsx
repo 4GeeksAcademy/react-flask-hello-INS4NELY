@@ -5,8 +5,6 @@ import { useAuth } from "../../context/AuthProvider.jsx";
 
 export const Private = () => {
     const { logout, store } = useAuth();
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -21,8 +19,6 @@ export const Private = () => {
         logout()
         navigate(`/`)
     };
-
-    console.log(store.user?.profile?.email);
 
     return (
         <div className="container-fluid">
