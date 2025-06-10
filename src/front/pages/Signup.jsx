@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
-import { useAuth } from "../../context/AuthProvider.jsx";
 
 export const Signup = () => {
-	const { login } = useAuth();
 	const [name, setName] = useState("");
 	const [last_name, setLastName] = useState("");
 	const [email, setEmail] = useState("");
